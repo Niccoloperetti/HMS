@@ -11,14 +11,18 @@ namespace HMS
         #endregion
 
         #region constructor
-        public DoctorUserModel(){}
-        public DoctorUserModel(string? doctorID, int? doctorRole)
+        public DoctorUserModel() : base(){}
+        public DoctorUserModel(string? name, string? surname, string? fiscalCode, DateTime? birthday, string? address,
+            string? email, string? phoneNumber, string? doctorID, int? doctorRole) 
+            : base(name, surname, fiscalCode, birthday, address, email, phoneNumber)
         {
             DoctorID = doctorID;//TODO: need to add a DoctorID generator to the ID generator
             DoctorRole = doctorRole;
             DoctorPatientsList = new List<UserModelBase>();
         }
-        public DoctorUserModel(string? doctorID, int? doctorRole, List<UserModelBase> doctorPatientsList)
+        public DoctorUserModel(string? name, string? surname, string? fiscalCode, DateTime? birthday, string? address,
+            string? email, string? phoneNumber, string? doctorID, int? doctorRole, List<UserModelBase> doctorPatientsList) 
+            : base(name, surname, fiscalCode, birthday, address, email, phoneNumber)
         {
             DoctorID = doctorID;
             DoctorRole = doctorRole;
