@@ -14,6 +14,8 @@ namespace HMS
         public string? UserId { get; set; }
         public string? UserPassword { get; set; }
         public DateTime? Created { get; set; }
+
+        //TODO: sections and districts can be probably moved here, it would be a more sensible and correct choice
         #endregion
 
         #region constructor
