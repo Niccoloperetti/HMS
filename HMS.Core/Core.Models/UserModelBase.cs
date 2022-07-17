@@ -30,10 +30,9 @@ namespace HMS
             Address = address;
             Email = email;
             PhoneNumber = phoneNumber;
-            //UserId = ; will need a way to keep track of consecutive user IDs
+            // TODO: create id generator for UserID assign, needs to return a nullable
             Created = DateTime.Now;
         }
-
         #endregion
     }
 }
