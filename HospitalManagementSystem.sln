@@ -5,6 +5,14 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagementSystem", "HospitalManagementSystem\HospitalManagementSystem.csproj", "{404BE520-BDB4-4E11-94ED-95751A2DFF9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HMS.Business", "HMS.Business", "{5F9452F0-2E38-4F4A-890C-8181E3EF0683}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HMS.Core", "HMS.Core", "{67D4952A-40E9-4A5A-B06D-5207BB36AE5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HMS.Presentation", "HMS.Presentation", "{5D998C7A-4693-4CF5-A950-53071EDB27CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS.Core", "HMS.Core\HMS.Core.csproj", "{0F2FC32B-8A59-411B-9459-A7B86E5468DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,17 @@ Global
 		{404BE520-BDB4-4E11-94ED-95751A2DFF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{404BE520-BDB4-4E11-94ED-95751A2DFF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{404BE520-BDB4-4E11-94ED-95751A2DFF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2FC32B-8A59-411B-9459-A7B86E5468DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2FC32B-8A59-411B-9459-A7B86E5468DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2FC32B-8A59-411B-9459-A7B86E5468DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2FC32B-8A59-411B-9459-A7B86E5468DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{404BE520-BDB4-4E11-94ED-95751A2DFF9D} = {5D998C7A-4693-4CF5-A950-53071EDB27CC}
+		{0F2FC32B-8A59-411B-9459-A7B86E5468DE} = {67D4952A-40E9-4A5A-B06D-5207BB36AE5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1587B9AB-AEF2-4265-952D-926DC06729A2}
